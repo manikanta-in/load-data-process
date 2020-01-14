@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<Loads>
+     <Load>
+          
+          <BillOfLading>BOL7745</BillOfLading>
+          <Action>add</Action>
+          <DisplayLoadNumber>BOL4474</DisplayLoadNumber>
+          <PRONumber>1234</PRONumber>
+          <RelayLoad>true</RelayLoad>
+          <Carrier>
+               <Name>Support Carrier (Production)</Name>
+               <SCAC>SUPC</SCAC>
+          </Carrier>
+          <TruckNumber/>
+          <DriverPhone/>
+          <DeviceID/>
+          <RailEquipmentInitials></RailEquipmentInitials>
+          <RailEquipmentNumber></RailEquipmentNumber>
+          <Tags>
+               <Tag>tag1</Tag>
+               <Tag>tag2</Tag>
+          </Tags>
+          <HaulParameters>
+               <HaulType>inbound_load</HaulType>
+               <HaulParameter2>new_haul_parameter</HaulParameter2>
+          </HaulParameters>
+          <ReferenceNumbers>
+               <ReferenceNumber>ref1</ReferenceNumber>
+               <ReferenceNumber>ref2</ReferenceNumber>
+          </ReferenceNumbers>
+          <HighPriority>false</HighPriority>
+          <PickupStops>
+               <PickupStop>
+                    <Action>add</Action>
+                    <Name>Sample Stop 1</Name>
+                    <StopId>123</StopId>
+                    <StopSequence>1</StopSequence>
+                    <LocationId>1234</LocationId>
+                    <StreetAddress>1 N. Dearborn St.</StreetAddress>
+                    <StreetAddress2>Suite 807</StreetAddress2>
+                    <City>Chicago</City>
+                    <State>IL</State>
+                    <Postal>60602</Postal>
+                    <Country>US</Country>
+                    <GeofenceRadius>1600</GeofenceRadius>
+                    <UnloadTime>30</UnloadTime>
+                    <EarliestPlannedPickupTime>2019-01-01T00:00:00Z</EarliestPlannedPickupTime>
+                    <LatestPlannedPickupTime>2019-01-01T01:00:00Z</LatestPlannedPickupTime>
+                    <TimezoneOffset>-21600</TimezoneOffset>
+                    <WantTime>2018-01-26T12:00:00Z</WantTime>
+               </PickupStop>
+          </PickupStops>
+          <DeliveryStops>
+               <DeliveryStop>
+                    <Action>add</Action>
+                    <Name>DC 872</Name>
+                    <StopId>323</StopId>
+                    <StopSequence>2</StopSequence>
+                    <LocationId>4321</LocationId>
+                    <StreetAddress>2001 N Clark St</StreetAddress>
+                    <StreetAddress2>Suite 1</StreetAddress2>
+                    <City>Chicago</City>
+                    <State>IL</State>
+                    <Postal>60614</Postal>
+                    <Country>US</Country>
+                    <GeofenceRadius>1600</GeofenceRadius>
+                    <UnloadTime>30</UnloadTime>
+                    <EarliestAppointmentTime>2019-01-03T05:00:00Z</EarliestAppointmentTime>
+                    <LatestAppointmentTime>2019-01-03T06:00:00Z</LatestAppointmentTime>
+                    <TimezoneOffset>-21600</TimezoneOffset>
+                    <WantTime>2018-02-15T13:00:00Z</WantTime>
+          <Customer>
+               <ShipTo>DC 872</ShipTo>
+               <Id>789789</Id>
+               <Name>Customer XYZ</Name>
+               <PONumbers>
+                    <PONumber>00210123OF-203503</PONumber>
+               </PONumbers>
+               <PointOfContact>
+                    <Name/>
+                    <Email/>
+                    <Phone>123-747-9999</Phone>
+               </PointOfContact>
+          </Customer>
+          <ReferenceNumbers>
+               <ReferenceNumber>1234567</ReferenceNumber>
+               <ReferenceNumber>2412422222</ReferenceNumber>
+               <ReferenceNumber>PalletNumber:54831396</ReferenceNumber>
+          </ReferenceNumbers>
+          <Pallets>
+               <Pallet>
+               <Number>123444444</Number>
+               <Parts>
+                    <Part>
+                         <ShipperPartNumber>1259924</ShipperPartNumber>
+                         <CustomerPartNumber>123-FCOSS</CustomerPartNumber>
+                         <Quantity>1</Quantity>
+                         <Weight>41.92L B</Weight>
+                    </Part>
+                    <Part>
+                         <ShipperPartNumber>59924</ShipperPartNumber>
+                         <CustomerPartNumber>65-2333SS</CustomerPartNumber>
+                         <Quantity>21</Quantity>
+                         <Weight>880.32LB</Weight>
+                    </Part>
+                    <Part>
+                         <ShipperPartNumber>1924</ShipperPartNumber>
+                         <CustomerPartNumber>65-24DGOSS</CustomerPartNumber>
+                         <Quantity>22</Quantity>
+                         <Weight>922.24LB</Weight>
+                    </Part>
+                    <Part>
+                         <ShipperPartNumber>1255524</ShipperPartNumber>
+                         <CustomerPartNumber>65-24S</CustomerPartNumber>
+                         <Quantity>15</Quantity>
+                         <Weight>628.8LB</Weight>
+                    </Part>
+                    </Parts>
+               </Pallet>
+               </Pallets>
+          </DeliveryStop>
+     </DeliveryStops>
+     <Products>
+          <Product>
+               <ProductType>Produce</ProductType>
+               <ProductId>012345</ProductId>
+               <SetTemperature>28</SetTemperature>
+               <UpperTemperatureThreshold>34</UpperTemperatureThreshold>
+               <LowerTemperatureThreshold>20</LowerTemperatureThreshold>
+               <TimeToleranceInMinutes>30</TimeToleranceInMinutes>
+          </Product>
+          </Products>
+     </Load>
+     
+</Loads>
