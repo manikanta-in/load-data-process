@@ -1,12 +1,16 @@
 package com.mbusa.atop.data.model;
 
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
-@JsonPropertyOrder(value = "Load")
-//@JsonIgnoreProperties(ignoreUnknown = true)
+
+
+@JacksonXmlRootElement(localName = "Load")
 public class Load
 {
 
@@ -18,39 +22,53 @@ public class Load
 	@JacksonXmlProperty(localName = "RelayLoad")
 	private String RelayLoad;
 
+	@JacksonXmlProperty(localName = "HaulParameters")
 	private HaulParameters HaulParameters;
 
 	@JacksonXmlProperty(localName = "Action")
 	private String action;
 
+	@JacksonXmlProperty(localName = "DisplayLoadNumber")
 	private String DisplayLoadNumber;
 
-	private Products Products;
+	@JacksonXmlProperty(localName = "Products")
+	private List<Product> Products;
 
+	@JacksonXmlProperty(localName = "RailEquipmentInitials")
 	private String RailEquipmentInitials;
 
+	@JacksonXmlProperty(localName = "DeviceID")
 	private String DeviceID;
 
+	@JacksonXmlProperty(localName = "HighPriority")
 	private String HighPriority;
 
 	@JacksonXmlProperty(localName = "BillOfLading")
 	private String billOfLading;
 
-	private DeliveryStops DeliveryStops;
+	@JacksonXmlProperty(localName = "DeliveryStops")
+	private List<DeliveryStop> DeliveryStops;
 
+	@JacksonXmlProperty(localName = "RailEquipmentNumber")
 	private String RailEquipmentNumber;
 
-	private ReferenceNumbers ReferenceNumbers;
+	@JacksonXmlProperty(localName = "ReferenceNumbers")
+	private List<String> ReferenceNumbers;
 
+	@JacksonXmlProperty(localName = "TruckNumber")
 	private String TruckNumber;
 
+	@JacksonXmlProperty(localName = "PRONumber")
 	private String PRONumber;
 
+	@JacksonXmlProperty(localName = "Carrier")
 	private Carrier Carrier;
 
+	@JacksonXmlProperty(localName = "Tags")
 	private Tags Tags;
 
-	private PickupStops PickupStops;
+	@JacksonXmlProperty(localName = "PickupStops")
+	private List<PickupStop> PickupStops;
 
 	public String getDriverPhone ()
 	{
@@ -102,12 +120,12 @@ public class Load
 		this.DisplayLoadNumber = DisplayLoadNumber;
 	}
 
-	public Products getProducts ()
+	public List<Product> getProducts ()
 	{
 		return Products;
 	}
 
-	public void setProducts (Products Products)
+	public void setProducts (List<Product> Products)
 	{
 		this.Products = Products;
 	}
@@ -152,20 +170,17 @@ public class Load
 		this.billOfLading = BillOfLading;
 	}
 
-	public DeliveryStops getDeliveryStops ()
+	public List<DeliveryStop> getDeliveryStops ()
 	{
 		return DeliveryStops;
 	}
 
-	public void setDeliveryStops (DeliveryStops DeliveryStops)
+	public void setDeliveryStops (List<DeliveryStop> DeliveryStops)
 	{
 		this.DeliveryStops = DeliveryStops;
 	}
 
-	public Load(String billOfLading) {
-		super();	
-		this.billOfLading = billOfLading;
-	}
+	
 
 	public String getRailEquipmentNumber ()
 	{
@@ -177,12 +192,12 @@ public class Load
 		this.RailEquipmentNumber = RailEquipmentNumber;
 	}
 
-	public ReferenceNumbers getReferenceNumbers ()
+	public List<String> getReferenceNumbers ()
 	{
 		return ReferenceNumbers;
 	}
 
-	public void setReferenceNumbers (ReferenceNumbers ReferenceNumbers)
+	public void setReferenceNumbers (List<String> ReferenceNumbers)
 	{
 		this.ReferenceNumbers = ReferenceNumbers;
 	}
@@ -227,24 +242,23 @@ public class Load
 		this.Tags = Tags;
 	}
 
-	public PickupStops getPickupStops ()
+	public List<PickupStop> getPickupStops ()
 	{
 		return PickupStops;
 	}
 
-	public void setPickupStops (PickupStops PickupStops)
+	public void setPickupStops (List<PickupStop> PickupStops)
 	{
 		this.PickupStops = PickupStops;
 	}
 
 	public Load() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [DriverPhone = "+DriverPhone+", RelayLoad = "+RelayLoad+", HaulParameters = "+HaulParameters+", Action = "+action+", DisplayLoadNumber = "+DisplayLoadNumber+", Products = "+Products+", RailEquipmentInitials = "+RailEquipmentInitials+", DeviceID = "+DeviceID+", HighPriority = "+HighPriority+", BillOfLading = "+billOfLading+", DeliveryStops = "+DeliveryStops+", RailEquipmentNumber = "+RailEquipmentNumber+", ReferenceNumbers = "+ReferenceNumbers+", TruckNumber = "+TruckNumber+", PRONumber = "+PRONumber+", Carrier = "+Carrier+", Tags = "+Tags+", PickupStops = "+PickupStops+"]";
+		return "Load [DriverPhone = "+DriverPhone+", RelayLoad = "+RelayLoad+", HaulParameters = "+HaulParameters+", Action = "+action+", DisplayLoadNumber = "+DisplayLoadNumber+", Products = "+Products+", RailEquipmentInitials = "+RailEquipmentInitials+", DeviceID = "+DeviceID+", HighPriority = "+HighPriority+", BillOfLading = "+billOfLading+", DeliveryStops = "+DeliveryStops+", RailEquipmentNumber = "+RailEquipmentNumber+", ReferenceNumbers = "+ReferenceNumbers+", TruckNumber = "+TruckNumber+", PRONumber = "+PRONumber+", Carrier = "+Carrier+", Tags = "+Tags+", PickupStops = "+PickupStops+"]";
 	}
 }

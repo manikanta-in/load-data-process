@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Loads>
-     <Load>
-          
+     <Load>         
           <BillOfLading>BOL7745</BillOfLading>
           <Action>add</Action>
           <DisplayLoadNumber>BOL4474</DisplayLoadNumber>
@@ -31,6 +30,25 @@
           <HighPriority>false</HighPriority>
           <PickupStops>
                <PickupStop>
+                    <Action>add</Action>
+                    <Name>Sample Stop 1</Name>
+                    <StopId>123</StopId>
+                    <StopSequence>1</StopSequence>
+                    <LocationId>1234</LocationId>
+                    <StreetAddress>1 N. Dearborn St.</StreetAddress>
+                    <StreetAddress2>Suite 807</StreetAddress2>
+                    <City>Chicago</City>
+                    <State>IL</State>
+                    <Postal>60602</Postal>
+                    <Country>US</Country>
+                    <GeofenceRadius>1600</GeofenceRadius>
+                    <UnloadTime>30</UnloadTime>
+                    <EarliestPlannedPickupTime>2019-01-01T00:00:00Z</EarliestPlannedPickupTime>
+                    <LatestPlannedPickupTime>2019-01-01T01:00:00Z</LatestPlannedPickupTime>
+                    <TimezoneOffset>-21600</TimezoneOffset>
+                    <WantTime>2018-01-26T12:00:00Z</WantTime>
+               </PickupStop>
+                <PickupStop>
                     <Action>add</Action>
                     <Name>Sample Stop 1</Name>
                     <StopId>123</StopId>

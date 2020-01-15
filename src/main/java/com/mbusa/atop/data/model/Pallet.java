@@ -1,9 +1,11 @@
 package com.mbusa.atop.data.model;
 
+import java.util.List;
+
 public class Pallet {
 	private String Number;
 
-	private Parts Parts;
+	private List<Part> Parts;
 
 	public String getNumber ()
 	{
@@ -15,12 +17,12 @@ public class Pallet {
 		this.Number = Number;
 	}
 
-	public Parts getParts ()
+	public List<Part> getParts ()
 	{
 		return Parts;
 	}
 
-	public void setParts (Parts Parts)
+	public void setParts (List<Part> Parts)
 	{
 		this.Parts = Parts;
 	}
@@ -28,6 +30,6 @@ public class Pallet {
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [Number = "+Number+", Parts = "+Parts+"]";
+		return "Pallet [Number = "+Number+", Parts = "+Parts+"]";
 	}
 }

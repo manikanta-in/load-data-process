@@ -1,5 +1,10 @@
 package com.mbusa.atop.data.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JacksonXmlRootElement(localName = "Product")
 public class Product {
 	private String TimeToleranceInMinutes;
 

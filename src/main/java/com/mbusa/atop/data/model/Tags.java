@@ -1,15 +1,24 @@
 package com.mbusa.atop.data.model;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+@JacksonXmlRootElement(localName = "Tags")
 public class Tags {
 
-	private String[] Tag;
+	@JacksonXmlProperty(localName = "Tag")
+	@JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
+	private List<String> Tag;
 
-    public String[] getTag ()
+    public List<String> getTag ()
     {
         return Tag;
     }
 
-    public void setTag (String[] Tag)
+    public void setTag (List<String> Tag)
     {
         this.Tag = Tag;
     }
@@ -17,6 +26,6 @@ public class Tags {
     @Override
     public String toString()
     {
-        return "ClassPojo [Tag = "+Tag+"]";
+        return "Tags [Tag = "+Tag+"]";
     }
 }

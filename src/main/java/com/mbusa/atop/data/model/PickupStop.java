@@ -1,39 +1,60 @@
 package com.mbusa.atop.data.model;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+
+@JacksonXmlRootElement(localName = "PickupStop")
 public class PickupStop
 {
+	@JacksonXmlProperty(localName = "LatestPlannedPickupTime")
     private String LatestPlannedPickupTime;
 
+    @JacksonXmlProperty(localName = "Action")
     private String Action;
 
+    @JacksonXmlProperty(localName = "StopId")
     private String StopId;
 
+    @JacksonXmlProperty(localName = "UnloadTime")
     private String UnloadTime;
 
+    @JacksonXmlProperty(localName = "LocationId")
     private String LocationId;
 
+    @JacksonXmlProperty(localName = "GeofenceRadius")
     private String GeofenceRadius;
 
+    @JacksonXmlProperty(localName = "City")
     private String City;
 
+    @JacksonXmlProperty(localName = "TimezoneOffset")
     private String TimezoneOffset;
 
+    @JacksonXmlProperty(localName = "StopSequence")
     private String StopSequence;
 
+    @JacksonXmlProperty(localName = "StreetAddress2")
     private String StreetAddress2;
 
+    @JacksonXmlProperty(localName = "Name")
     private String Name;
 
+    @JacksonXmlProperty(localName = "StreetAddress")
     private String StreetAddress;
 
+    @JacksonXmlProperty(localName = "State")
     private String State;
 
+    @JacksonXmlProperty(localName = "EarliestPlannedPickupTime")
     private String EarliestPlannedPickupTime;
 
+    @JacksonXmlProperty(localName = "Country")
     private String Country;
 
+    @JacksonXmlProperty(localName = "Postal")
     private String Postal;
 
+    @JacksonXmlProperty(localName = "WantTime")
     private String WantTime;
 
     public String getLatestPlannedPickupTime ()
